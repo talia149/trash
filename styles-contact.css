@@ -1,0 +1,226 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("restaurant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.center {
+    width: 600px;
+	height: 800px;
+	padding: 2%;
+	text-align: center;
+    margin: 100px auto;
+	text-align: center;
+}
+
+   
+#logo {
+    margin-bottom: 16px;
+	border: 3px dashed pink;
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Kalam', cursive;
+	font-size: 2.5em;
+    margin: 0px auto 10px auto;
+	color: #004417;
+  background-color: #fff;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+   font-family: 'Kalam', cursive;
+	 font-size: 2em;
+    line-height: 1.4;
+    color: #004417;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+    background-color: #fff;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+    
+nav{
+	font-family: 'Kalam', cursive;
+	font-size: 1.5em;
+	width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-width: 3px 0;
+	text-align: center;
+	margin: top 2em;
+ }   
+ 
+ nav li{
+	display: inline;
+ }
+
+ nav a {
+	display: inline-block;
+	padding: 10px;
+	color:  #004417;
+	text-decoration: none;
+ }
+  
+ a:hover {
+	color: #004417;
+	background: pink;
+ } 
+ /* Code for cards */
+
+/* sets everything to zero */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .cardphoto img {
+    display: block;
+    max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+  }
+ 
+  /* make the Section class cards here.  */
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+ 
+  /* make the card flex. The default is row so change flex direction to vertical. */
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+	margin-top: 100px;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cardphoto {
+    max-height: 250px;
+    overflow: hidden;
+  }
+ 
+  .cardarticle {
+    padding: 2.5rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardH1 {
+    font-family: 'Kalam', cursive;
+	font-size: 2rem;
+    margin: 0;
+    color: #004417;
+  }
+ 
+  .card p {
+    font-family: 'Capriola', sans-serif;
+	font-size: 1rem;
+    line-height: 1.5;
+  }
+ 
+  .card footer {
+    font-family: 'Kalam', cursive;
+	font-size: 1.2rem;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3{
+      color:#444;
+  }
+ 
+  .card p {
+      color: grey;
+  }  
